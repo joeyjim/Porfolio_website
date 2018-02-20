@@ -1,0 +1,163 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "main" "about" "skills" "ad1" "ad2" "ad3" "ad4" "foot";
+}
+
+.ad1 {
+    grid-area: ad1;
+}
+
+.ad2 {
+    grid-area: ad2;
+}
+
+.ad3 {
+    grid-area: ad3;
+}
+
+.ad4 {
+    grid-area: ad4;
+}
+
+.ad1,
+.ad2,
+.ad3,
+.ad4 {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.foot {
+    grid-area: foot;
+}
+
+.main {
+    grid-area: main;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.about {
+    grid-area: about;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.skills {
+    grid-area: skills;
+}
+
+.skills-tekst {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 8%;
+    text-align: center;
+}
+
+.web,
+.code,
+.social,
+.design,
+.photo {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+
+@media only screen and (min-width: 601px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /*grid-gap: 10px;*/
+        grid-template-areas: "main  main" "about about" "skills skills" "ad1  ad2" "ad3  ad4" "foot  foot";
+    }
+
+    .skills {
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "title title" "web  code" "social design" "photo .";
+    }
+
+    .skills article {
+        display: flex;
+        padding: 30px;
+    }
+
+    .skills-tekst {
+        margin-left: 5%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: left;
+    }
+
+    .web,
+    .code,
+    .social,
+    .design,
+    .photo {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+    }
+
+    .skills-tekst p,
+    .skills-tekst h2 {
+        margin: 0;
+    }
+
+    .title {
+        grid-area: title;
+    }
+
+    .web {
+        grid-area: web;
+
+    }
+
+    .code {
+        grid-area: code;
+    }
+
+    .social {
+        grid-area: social;
+    }
+
+    .design {
+        grid-area: design;
+    }
+
+    .photo {
+        grid-area: photo;
+    }
+
+    .ad1,
+    .ad3 {
+        padding-left: 20%;
+        padding-right: 0;
+    }
+    .ad2,
+    .ad4 {
+        padding-right: 20%;
+        padding-left: 0;
+    }
+
+    .ad1,
+    .ad2,
+    .ad3,
+    .ad4 {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}

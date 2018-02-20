@@ -1,0 +1,335 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: avenir, sans-serif;
+    margin: 0;
+}
+
+h1,
+h2 {
+    font-family: 'Indie Flower', cursive;
+}
+
+h2 {
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 1em;
+    background-color: rgba(50, 50, 50, 0.2);
+    font-weight: normal;
+    padding: 0.4em;
+}
+
+p {
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    line-height: 1.7em;
+}
+
+.coffee_text {
+    color: #ffffff;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 49px;
+    text-decoration: none;
+}
+
+.btn-primairy {
+    background-color: #34495e;
+    color: #fff;
+    border-radius: .35em;
+    margin-bottom: 10px;
+}
+
+.btn-ghost {
+    color: #34495e;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-foot {
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-icon-visible {
+    width: 24px;
+    margin-right: 8px;
+}
+
+.btn-icon-white {
+    fill: #ffffff;
+}
+
+.btn-icon-black {
+    fill: #34495e;
+}
+
+.btn-icon {
+    will-change: width, transform;
+    border-radius: 50%;
+
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    /* if you want the icon visible always */
+}
+
+.btn:hover .btn-icon {
+    width: 24px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    margin-left: 8.333333333333334px;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 15%;
+}
+
+.outer {
+    display: flex;
+    z-index: 9;
+    margin: 10px;
+}
+
+#logo-link-header-image {
+    height: 60px;
+    width: auto;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+#logo-link-header-image:hover {
+    opacity: 0.7;
+}
+
+#header-titel {
+    color: #ffffff;
+    letter-spacing: 7px;
+    font-size: 3.00em;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+#header-subtitel {
+    color: #ffffff;
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 5px;
+    font-size: 2em;
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+
+.header-cv {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.header-item {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.header-item:hover {
+    text-decoration: underline;
+}
+
+hr {
+    width: 322px;
+    border-radius: 10px;
+    border: 0;
+    border-top: 5px solid #eee;
+}
+
+.header,
+.about,
+.ad1,
+.ad2,
+.ad3,
+.ad4,
+.foot {
+    padding: 0.2em 1em;
+}
+
+
+.about,
+.ad1,
+.ad2,
+.ad3,
+.ad4 {
+    margin: 0vw;
+    border-radius: .35em;
+}
+
+.header {
+    background-color: #34495e;
+}
+
+.main {
+    background-color: #16a086;
+    background-image: url(../images/Me.png);
+    background-repeat: no-repeat;
+    height: auto;
+    max-width: 100%;
+    background-size: cover;
+}
+
+.ad1 {
+    /*background-color: #F27F7A;*/
+    background-image: url(../images/card1.svg);
+    background-repeat: no-repeat;
+    background-position: 70% 115px;
+}
+
+.skills {
+    background-color: #008DD5;
+    color: #ffffff;
+}
+
+.ad2 {
+    /*background-color: #FFA17A;*/
+}
+
+.ad3 {
+    /*background-color: #16a086;*/
+}
+
+.ad4 {
+    /*background-color: #D06F8F;*/
+}
+
+.foot {
+    background-color: #34495e;
+}
+
+img {
+    width: 100%;
+    margin: 0;
+}
+
+.ervaring {
+    list-style: none;
+    padding: 0;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    line-height: 1.7em;
+}
+
+.ervaring li {
+    margin-bottom: 1em;
+    list-style: inside;
+}
+
+/*Footer*/
+
+.social-footer-img {
+    width: 43px;
+}
+
+.social-footer-img:hover {
+    opacity: 0.7;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+#coppyright-link {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+.skills-svg {
+    /*fill: #34495e;*/
+    fill: #ffffff;
+    width: 120px;
+    min-width: 120px;
+    height: auto;
+    max-width: 100%;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.social-item {
+    margin: 10px;
+}
+
+@media only screen and (min-width: 364px) {
+    #header-titel {
+        font-size: 3.27em;
+    }
+
+    .header-titel {
+        font-size: 3.27em;
+    }
+}
+
+
+@media only screen and (min-width: 601px) {
+
+
+    .ad1,
+    .ad2,
+    .ad3,
+    .ad4 {
+        margin: 2vw;
+    }
+
+    .btn {
+        width: 166px;
+    }
+
+    .big-text {
+        font-size: 1.5rem;
+        line-height: 2.38889rem;
+        text-align: center;
+    }
+}
